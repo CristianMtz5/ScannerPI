@@ -1,0 +1,26 @@
+{
+  "name": "versionscanner",
+  "version": "1.0.0",
+  "description": "TareaPi",
+  "main": "./dist/src/index.js",
+  "keywords": [
+    "PI"
+  ],
+  "author": "Cristian Martinez",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build",
+    "build-we": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "build-external": "webpack --config ./external/webpack.config.js",
+    "deploy": "npm run build && npm run build-dev"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "@felipeaamacedo/matrix-ts": "^1.0.4"
+  }
+}

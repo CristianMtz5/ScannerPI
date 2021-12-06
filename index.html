@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="main-container">
+        <div class="container-one">
+          <div class="container-canvas">
+            <canvas
+              id="img1"
+              width="463"
+              height="279"
+              crossorigin="anonymous"
+            ></canvas>
+          </div>
+          <div class="info-container">
+            <a href="" id="color"> </a> <output id="rgb">RGB:</output>
+            <output id="list"></output>
+          </div>
+          <div class="button-container">
+            <input type="file" id="files" name="files" />
+          </div>
+          <div class="button-container-two">
+            <input type="button" class="op-bilineal" value="Realizar Trazado" id="op-points">
+            <input type="button" class="op-bilineal" value="Transformar" id="op-bilineal" />
+          </div>
+        </div>
+      </main>
+      <aside class="aside-container">
+        <div class="container-two">
+          <div class="container-canvas-two">
+            <canvas
+            id="img2"
+            width="463"
+            height="279"
+            crossorigin="anonymous"
+          ></canvas>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
